@@ -1,5 +1,6 @@
 # e-commerce
 # E-Commerce Django Models
+# MBITHI SANDRA MINOO 167253 BBIT C
 
 This project implements an e-commerce system with `Customer` and `Order` models in Django, showcasing one-to-many data relationships.
 
