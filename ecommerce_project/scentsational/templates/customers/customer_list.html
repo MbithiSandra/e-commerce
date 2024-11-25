@@ -1,0 +1,27 @@
+<!-- scentsational/templates/customers/customer_list.html -->
+
+<!-- scentsational/templates/customers/customer_list.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List</title>
+</head>
+<body>
+    <h1>List of Customers</h1>
+    
+    <!-- Wrap non-list content inside a <p> tag -->
+    <p>Welcome to the customer list.</p>
+    
+    <ul>
+        <li>
+        <!-- Loop through customers and display each one inside <li> -->
+        {% for customer in customers %}
+            <li>{{ customer.name }} - {{ customer.email }}</li>
+        {% endfor %}
+    </li>
+    </ul>
+</body>
+</html>

@@ -14,9 +14,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+# ecommerce_project/urls.py
+
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include  # Include function is necessary for linking apps
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('scentsational.urls')),  # Include the URLs from your 'scentsational' app
 ]
+
